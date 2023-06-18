@@ -30,5 +30,30 @@ button {
     font-size: 14px;
 }
 
+.ripple-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-effect::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4); /* Color of the ripple effect */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease-out;
+    pointer-events: none;
+}
+
+.ripple-effect:focus::after,
+.ripple-effect:active::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
 
 
