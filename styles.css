@@ -3,7 +3,7 @@ body {
 }
 
 #passwordPage {
-    background-color: #000; /* Light black color */
+    background-color: #111; /* Light black color */
     height: 100vh;
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 input[type="password"],
 button {
-    background-color: #000; /* Light black color */
+    background-color: #111; /* Light black color */
     color: white;
     border: none;
     padding: 10px;
@@ -31,4 +31,5 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+
 
