@@ -14,12 +14,11 @@ body {
     color: white;
 }
 
-.fade-transition {
-    transition: opacity 0.5s ease-in-out;
-}
-
-#homePage {
-    opacity: 0;
+input[type="password"],
+button[type="submit"] {
+    background-color: #111;
+    color: white;
+    border: none;
 }
 
 
