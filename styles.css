@@ -1,11 +1,25 @@
+body {
+  background-color: #111;
+}
+
 .center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1, form {
-    text-align: center;
+  text-align: center;
+  color: white;
+}
+
+input, button {
+  background-color: #222;
+  color: white;
+}
+
+#message {
+  color: red;
 }
