@@ -21,22 +21,22 @@ form {
   margin-top: 16px;
 }
 
-input[type="password"] {
-  background-color: white;
-  color: black;
+input[type="password"],
+button[type="submit"] {
+  background-color: #222;
+  color: white;
   padding: 8px;
   border: none;
 }
 
+input[type="password"] {
+  width: 200px;
+}
+
 button[type="submit"] {
-  background-color: white;
-  color: black;
-  padding: 8px 16px;
-  border: none;
   cursor: pointer;
 }
 
 #message {
   color: red;
 }
-
