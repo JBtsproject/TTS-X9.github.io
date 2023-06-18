@@ -22,4 +22,3 @@ function submitForm(event) {
         message.style.display = 'block';
     }
 }
-
