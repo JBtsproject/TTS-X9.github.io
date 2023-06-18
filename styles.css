@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>PetK Storage</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="passwordPage" class="center">
-        <h1>Enter the Password</h1>
-        <form id="passwordForm" onsubmit="submitForm(event)">
-            <input type="password" id="passwordInput" placeholder="Enter the password">
-            <button type="submit">Submit</button>
-        </form>
-        <div id="message" style="display: none;"></div>
-    </div>
-    <div id="homePage" class="center" style="display: none;">
-        <!-- Home page content goes here -->
-    </div>
+body {
+    background-color: #000; /* Light black color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.center {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+input[type="password"],
+button {
+    background-color: #000; /* Light black color */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
 
