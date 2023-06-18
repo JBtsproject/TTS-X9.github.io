@@ -13,11 +13,8 @@ function submitForm(event) {
         message.style.color = 'green';
         message.style.display = 'block';
         
-        // Delay for the transition effect
-        setTimeout(function() {
-            document.getElementById('passwordPage').style.display = 'none';
-            document.getElementById('homePage').style.display = 'block';
-        }, 1000); // Adjust the delay as needed
+        document.getElementById('passwordPage').style.display = 'none';
+        document.getElementById('homePage').style.display = 'block';
     } else {
         // Password is incorrect
         message.textContent = 'Password incorrect. Please try again.';
@@ -25,3 +22,4 @@ function submitForm(event) {
         message.style.display = 'block';
     }
 }
+
