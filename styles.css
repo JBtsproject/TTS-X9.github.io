@@ -4,6 +4,7 @@ body {
 
 #passwordPage {
     background-color: #000; /* Light black color */
+    height: 100vh;
 }
 
 .center {
@@ -22,7 +23,7 @@ h1 {
 
 input[type="password"],
 button {
-    background-color: #f5f5f5; /* Slightly darker white color */
+    background-color: #000; /* Light black color */
     color: white;
     border: none;
     padding: 10px;
