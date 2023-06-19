@@ -18,13 +18,13 @@ h1 {
 }
 
 .button-container button {
-  padding: 15px 30px;
+  width: 100%;
+  padding: 15px;
   font-size: 18px;
   background-color: #3498db;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 0;
 }
-
