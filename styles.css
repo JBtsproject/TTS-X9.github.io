@@ -1,5 +1,5 @@
 body {
-    background-color: #000; /* Light black color */
+    background-color: #000; /* Light black color for the password page */
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -29,6 +29,43 @@ button {
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+}
+
+/* Additional styles for the home page with left side scroll UI */
+body.home {
+    background-color: #f2f2f2; /* Light gray color for the home page */
+    overflow-x: hidden;
+}
+
+.left-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background-color: #333; /* Dark gray color for the left scroll */
+}
+
+.content {
+    margin-left: 80px; /* Adjust this value based on the width of the left scroll */
+    padding: 20px;
+}
+
+.left-scroll ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-scroll li {
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.left-scroll li:hover {
+    background-color: #555; /* Dark gray color for hover effect */
 }
 
 
