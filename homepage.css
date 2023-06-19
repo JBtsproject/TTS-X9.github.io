@@ -4,40 +4,38 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  color: black; /* Change the text color to black */
+.container {
+  display: flex;
 }
 
-#leftScroll {
+.sidebar {
   width: 250px;
-  height: 100vh;
   background-color: #f4f4f4;
-  position: fixed;
-  top: 0;
-  left: 0;
   padding: 10px;
   box-sizing: border-box;
-  z-index: 9999;
 }
 
-#leftScroll ul {
+.sidebar-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#leftScroll ul li {
+.sidebar-menu li {
   margin-bottom: 10px;
 }
 
-#leftScroll ul li a {
+.sidebar-menu li a {
   color: black;
   text-decoration: none;
 }
 
-#leftScroll ul li a:hover {
+.sidebar-menu li a:hover {
   text-decoration: underline;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 10px;
 }
 
