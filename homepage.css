@@ -4,33 +4,40 @@ body {
   padding: 0;
 }
 
-.left-sidebar {
-  background-color: #f2f2f2; /* Light gray color */
-  width: 200px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow-y: scroll;
-}
-
-.scrollable-content {
-  padding: 20px;
-}
-
-.main-content {
-  margin-left: 200px; /* Same width as the left sidebar */
-  padding: 20px;
-}
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: black; /* Change the text color to black */
 }
 
-button {
-  display: block;
-  margin-bottom: 10px;
+#leftScroll {
+  width: 250px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 10px;
+  box-sizing: border-box;
+  z-index: 9999;
 }
+
+#leftScroll ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leftScroll ul li {
+  margin-bottom: 10px;
+}
+
+#leftScroll ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+#leftScroll ul li a:hover {
+  text-decoration: underline;
+}
+
