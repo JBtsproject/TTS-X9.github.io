@@ -18,25 +18,24 @@ body {
   font-weight: bold;
   color: #888;
   position: absolute;
-  animation: floatAnimation 5s ease-in-out infinite;
+  animation: floatAnimation 10s linear infinite;
 }
 
 @keyframes floatAnimation {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(-50%);
   }
   25% {
-    transform: translate(50px, 50px);
+    transform: translateX(50%);
   }
   50% {
-    transform: translate(0, 0);
+    transform: translateY(100%);
   }
   75% {
-    transform: translate(-50px, -50px);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateX(-50%);
   }
 }
-
 
