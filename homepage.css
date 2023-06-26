@@ -1,14 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .floating-text {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   font-weight: bold;
   color: #888;
@@ -17,17 +14,13 @@ body {
 
 @keyframes floatText {
   0% {
-    transform: translate(-50%, -50%);
+    transform: translate(var(--random-x1), var(--random-y1));
+  }
+  50% {
+    transform: translate(var(--random-x2), var(--random-y2));
   }
   100% {
-    transform: translate(calc(-50% + randomX()), calc(-50% + randomY()));
+    transform: translate(var(--random-x3), var(--random-y3));
   }
 }
 
-@function randomX() {
-  @return random(200) - 100;
-}
-
-@function randomY() {
-  @return random(200) - 100;
-}
