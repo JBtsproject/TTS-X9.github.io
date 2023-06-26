@@ -19,24 +19,23 @@ body {
   color: #888;
   position: absolute;
   animation: floatAnimation 10s linear infinite;
+  transform-origin: center;
 }
 
 @keyframes floatAnimation {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(0) translateY(0);
   }
   25% {
-    transform: translateX(50%);
+    transform: translateX(calc(100vw - 100%)) translateY(0);
   }
   50% {
-    transform: translateY(-50%);
+    transform: translateX(calc(100vw - 100%)) translateY(calc(100vh - 100%));
   }
   75% {
-    transform: translateY(50%);
+    transform: translateX(0) translateY(calc(100vh - 100%));
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0) translateY(0);
   }
 }
-
-
