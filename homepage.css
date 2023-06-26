@@ -5,10 +5,11 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .floating-text {
@@ -21,14 +22,21 @@ body {
 }
 
 @keyframes floatAnimation {
-  0%, 100% {
+  0% {
     transform: translate(0, 0);
   }
-  25%, 75% {
+  25% {
     transform: translate(50px, 50px);
   }
   50% {
+    transform: translate(0, 0);
+  }
+  75% {
     transform: translate(-50px, -50px);
   }
+  100% {
+    transform: translate(0, 0);
+  }
 }
+
 
