@@ -8,24 +8,25 @@
       padding: 0;
     }
 
-    .drive-embed {
+    .drive-container {
       position: relative;
       width: 100%;
       height: 100vh;
     }
 
-    .drive-embed iframe {
+    .drive-iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="drive-embed">
-    <iframe src="https://drive.google.com/embeddedfolderview?id=1WIaeq4uoLnA08QHjKHeegXW0JEqpysJr#grid" frameborder="0"></iframe>
+  <div class="drive-container">
+    <iframe class="drive-iframe" src="https://drive.google.com/embeddedfolderview?id=1WIaeq4uoLnA08QHjKHeegXW0JEqpysJr#grid"></iframe>
   </div>
 </body>
 </html>
