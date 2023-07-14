@@ -19,5 +19,17 @@ body {
   text-align: center;
   margin-top: 20vh; /* Adjust the value to position it higher */
 }
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
-
+.square-button {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: #444;
+  border: none;
+}
