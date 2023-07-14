@@ -14,8 +14,10 @@ body {
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 60px;
-  margin-left: 20px;
+  font-size: 72px;
+  color: #444; /* Dark gray color */
+  text-align: center;
+  margin-top: 20vh; /* Adjust the value to position it higher */
 }
 
 
