@@ -19,23 +19,3 @@ body {
   text-align: center;
   margin-top: 20vh; /* Adjust the value to position it higher */
 }
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
-  color: darkgray;
-}
-
-.square-button {
-  width: 50px;
-  height: 50px;
-  margin-top: 20px;
-  background-color: #444;
-}
