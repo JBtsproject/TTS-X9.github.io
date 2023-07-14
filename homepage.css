@@ -21,7 +21,8 @@ body {
 }
 .button-container {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column; /* Set the flex direction to column */
+  align-items: flex-start; /* Align the buttons to the left */
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -29,7 +30,7 @@ body {
 .square-button {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-bottom: 10px; /* Adjust the spacing between the buttons */
   background-color: #444;
   border: none;
 }
