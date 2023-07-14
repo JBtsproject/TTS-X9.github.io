@@ -8,9 +8,11 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -19,6 +21,7 @@ body {
   text-align: center;
   margin-top: 20vh; /* Adjust the value to position it higher */
 }
+
 .subtext {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -26,4 +29,5 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+
 
