@@ -5,7 +5,7 @@ function submitForm(event) {
   const message = document.getElementById('message');
 
   // Add your password validation logic here
-  const password = 'IMNOTAROBOT'; // Replace with your actual password
+  const password = 'SAYABUKANROBOT'; // Replace with your actual password
 
   if (passwordInput.value === password) {
     // Password is correct
