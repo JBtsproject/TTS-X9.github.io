@@ -19,3 +19,10 @@ body {
   text-align: center;
   margin-top: 20vh; /* Adjust the value to position it higher */
 }
+.subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: darkgray;
+  margin-top: 10px;
+}
+
