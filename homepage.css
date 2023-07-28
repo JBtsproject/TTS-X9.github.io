@@ -6,6 +6,18 @@ body {
   background-position: top center; /* Position the image at the top center */
   margin: 0;
   padding: 0;
+  position: relative; /* Add this to make the pseudo-element position relative to the body */
+}
+
+body::before {
+  content: ''; /* Required for the pseudo-element */
+  position: absolute; /* Position the pseudo-element over the body */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6) 100%); /* Adjust the gradient to control the vignette effect */
+  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with content */
 }
 
 .container {
