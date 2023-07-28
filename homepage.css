@@ -2,7 +2,7 @@ body {
   background-color: #f1f1f1;
   background-image: url('images/DebrittoBckg.jpg'); /* Path to your image file inside the "images" folder */
   background-repeat: no-repeat; /* Prevent background image from repeating */
-  background-size: auto 100vh; /* Set the image width to auto and height to cover the entire viewport height */
+  background-size: cover; /* Scale the image to cover the entire background */
   background-position: top center; /* Position the image at the top center */
   margin: 0;
   padding: 0;
@@ -57,4 +57,3 @@ body {
   padding: 20px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle box shadow */
 }
-
