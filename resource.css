@@ -102,7 +102,6 @@ p {
 }
 /* Rest of the styles... */
 
-/* Neon yellow hover effect */
 .custom-button:hover {
   background-color: #f6ff00; /* Neon yellow color */
 }
