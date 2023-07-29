@@ -5,17 +5,6 @@
   <link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body>
-  <div class="center">
-    <h1 class="title">Tutor Teman Sebaya-X9</h1>
-    <p class="subtext">Dalam Pembangunan</p>
-    <div class="buttons-container">
-      <button class="custom-button">Test</button>
-      <button class="custom-button">Latihan Soal</button>
-      <button class="custom-button">Jadwal Tugas</button>
-      <button class="custom-button">?</button>
-      <button class="custom-button" onclick="redirectToTemporaryLink();">Temporary Button</button>
-    </div>
-  </div>
   <!-- Menu Button -->
   <div class="menu-button" onclick="toggleMenu()">
     <div class="menu-line"></div>
@@ -30,13 +19,13 @@
     <button class="dropdown-item" onclick="redirectToResourcePage()">Resource</button>
   </div>
 
+  <div class="center">
+    <h1 class="title">Tutor Teman Sebaya-X9</h1>
+    <p class="subtext">Dalam Pembangunan</p>
+  </div>
+
   <script src="HomepageScript.js"></script>
   <script>
-    function redirectToTemporaryLink() {
-      window.location.href = 'https://drive.google.com/drive/u/1/folders/1KAolDOGHRx__WSmkvDNF_tEHRjFdg133';
-    }
-
-    // Function to toggle the dropdown menu
     function redirectToHomePage() {
       window.location.href = 'homepage.html'; // Replace 'homepage.html' with the filename of your homepage
     }
@@ -54,7 +43,6 @@
       dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
     }
 
-    // Close the dropdown menu if clicked outside
     window.onclick = function (event) {
       if (!event.target.matches('.menu-button')) {
         var dropdownMenu = document.getElementById('dropdownMenu');
