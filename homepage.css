@@ -126,9 +126,22 @@ body {
   color: #444; /* Dark gray color */
 }
 
+/* Neon yellow hover effect */
+.custom-button:hover {
+  background-color: #00ff00; /* Green color */
+}
 
-.greeting {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: #444; /* Dark gray color */
+/* Media Query for screens up to 600px (typical for mobile devices) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 6vw;
+  }
+
+  .subtext {
+    font-size: 3vw;
+  }
+
+  .custom-button {
+    width: 90%; /* Adjust button width for smaller screens */
+  }
 }
