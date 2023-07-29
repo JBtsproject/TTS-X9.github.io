@@ -107,5 +107,8 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: #444; /* Dark gray color */
-  margin-top: 20px; /* Add some margin to separate the clock from the subtext */
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom edge of the container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally with respect to the container */
 }
