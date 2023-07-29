@@ -143,6 +143,8 @@ body {
 
   .custom-button {
     width: 90%; /* Adjust button width for smaller screens */
+    height: 150px; /* Adjust button height for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
 
   .menu-button {
@@ -154,3 +156,4 @@ body {
     width: 25px;
   }
 }
+
