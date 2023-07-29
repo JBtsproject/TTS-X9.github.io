@@ -1,133 +1,75 @@
-body {
-  background-color: #f1f1f1;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resource Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="resource.css">
+</head>
+<body>
+  <!-- Menu Button -->
+  <div class="menu-button" onclick="toggleMenu()">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
 
-.center {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  <!-- Dropdown Menu -->
+  <div class="dropdown-menu" id="dropdownMenu">
+    <button class="dropdown-item" onclick="redirectToHomePage()">Homepage</button>
+    <button class="dropdown-item" onclick="redirectToJadwalTugasPage()">Jadwal Tugas</button>
+    <button class="dropdown-item" onclick="redirectToResourcePage()">Resource Pembelajaran</button>
+  </div>
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  color: #444; /* Dark gray color */
-}
+  <div class="center">
+    <h1>Resource Page</h1>
+    <p>Welcome to the Resource page! Here, you can find various resources related to our website's topic.</p>
 
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: #444;
-  text-align: center;
-  max-width: 500px;
-}
+    <!-- Buttons from homepage.html -->
+    <div class="buttons-container">
+      <button class="custom-button">Pembahasan Materi</button>
+      <button class="custom-button">Latihan Soal</button>
+      <button class="custom-button" onclick="redirectToCRPage();">R</button>
+      <button class="custom-button">Informasi^2</button>
+      <button class="custom-button" onclick="redirectToTemporaryLink();">Temporary Storage</button>
+    </div>
+    <!-- End of Buttons from homepage.html -->
+  </div>
 
-/* Menu Button Styles */
-.menu-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 2;
-}
+  <script src="HomepageScript.js"></script>
+  <script>
+    function redirectToHomePage() {
+      window.location.href = 'homepage.html'; // Replace 'homepage.html' with the filename of your homepage
+    }
 
-.menu-line {
-  width: 30px;
-  height: 2px;
-  background-color: #444; /* Dark gray color */
-}
+    function redirectToJadwalTugasPage() {
+      window.location.href = 'jadwaltugas.html'; // Replace 'jadwaltugas.html' with the filename of your Jadwal Tugas page
+    }
 
-/* Dropdown Menu Styles */
-.dropdown-menu {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  display: none;
-  flex-direction: column;
-  background-color: #fff; /* White background color for the menu */
-  border: 1px solid #ddd; /* Light gray border */
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adding a box shadow */
-  z-index: 1;
-}
+    function redirectToResourcePage() {
+      window.location.href = 'resource.html'; // Replace 'resource.html' with the filename of your Resource page
+    }
 
-.dropdown-item {
-  padding: 8px 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #444; /* Dark gray color */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
+    function redirectToTemporaryLink() {
+      window.location.href = 'https://drive.google.com/drive/u/1/folders/1KAolDOGHRx__WSmkvDNF_tEHRjFdg133';
+    }
 
-/* Dropdown Menu Styles: Hover */
-.dropdown-item:hover {
-  background-color: #f1f1f1; /* Light gray background color on hover */
-}
+    function redirectToCRPage() {
+      window.location.href = 'CR.html'; // Redirect to the CR.html page
+    }
 
-/* Custom Button Styles */
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
+    function toggleMenu() {
+      var dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    }
 
-.custom-button {
-  width: 200px; /* Increased width to make the buttons longer horizontally */
-  height: 100px; /* Adjusted height for a balanced shape */
-  background-color: #007bff; /* Blue color */
-  color: #fff; /* White color for text */
-  font-size: 24px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle box shadow */
-}
-
-.custom-button:hover {
-  background-color: #00ff00; /* Green color */
-}
-
-/* Media Query for screens up to 600px (typical for mobile devices) */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 6vw;
-  }
-
-  p {
-    font-size: 3vw;
-  }
-
-  .menu-button {
-    width: 30px; /* Adjust the button size for mobile */
-    right: 10px; /* Adjust the button position for mobile */
-  }
-
-  .menu-line {
-    width: 30px;
-  }
-
-  .custom-button {
-    width: 90%; /* Adjust button width for smaller screens */
-    height: 150px; /* Adjust button height for smaller screens */
-    font-size: 16px; /* Adjust font size for smaller screens */
-    margin: 10px; /* Add some margin to create space between buttons and edges */
-  }
-}
+    window.onclick = function (event) {
+      if (!event.target.matches('.menu-button')) {
+        var dropdownMenu = document.getElementById('dropdownMenu');
+        if (dropdownMenu.style.display === 'block') {
+          dropdownMenu.style.display = 'none';
+        }
+      }
+    };
+  </script>
+</body>
+</html>
