@@ -19,7 +19,7 @@ h1 {
   font-size: 36px;
   color: #444; /* Dark gray color */
   text-align: center;
-  margin-top: 20px; /* Adjust the value to position it higher */
+  margin-top: 40px; /* Adjust the value to position it higher */
   margin-bottom: 20px; /* Adjust the value to add some space at the bottom */
 }
 
@@ -90,7 +90,8 @@ p {
 }
 
 .custom-button {
-  width: 200px; /* Increased width to make the buttons longer horizontally */
+  min-width: 200px; /* Minimum width to make the buttons not too narrow */
+  width: 30%; /* Adjusted width for responsive layout */
   height: 100px; /* Adjusted height for a balanced shape */
   background-color: #007bff; /* Blue color */
   color: #fff; /* White color for text */
@@ -136,5 +137,3 @@ p {
     width: 40px; /* Make it match the button's width */
   }
 }
-
-
