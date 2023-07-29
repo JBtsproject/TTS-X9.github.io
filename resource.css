@@ -86,8 +86,8 @@ p {
 }
 
 .custom-button {
-  width: 150px;
-  height: 150px;
+  width: 200px; /* Increased width to make the buttons longer horizontally */
+  height: 100px; /* Adjusted height for a balanced shape */
   background-color: #007bff; /* Blue color */
   color: #fff; /* White color for text */
   font-size: 24px;
