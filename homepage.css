@@ -135,7 +135,6 @@ body {
 @media (max-width: 600px) {
   .title {
     font-size: 6vw;
-    margin-top: 10vh; /* Adjust the margin for smaller screens */
   }
 
   .subtext {
@@ -151,24 +150,11 @@ body {
 
   .menu-button {
     width: 25px; /* Adjust the button size for mobile */
-    right: 10px; /* Adjust the button position for mobile */
+    right: 50%; /* Center the button horizontally on mobile */
+    transform: translateX(50%); /* Adjust the button position for mobile */
   }
 
   .menu-line {
     width: 25px;
   }
-
-  .clock-container {
-    bottom: 60px; /* Adjust the clock position for mobile */
-  }
-
-  .clock {
-    font-size: 18px; /* Adjust the clock font size for mobile */
-  }
-
-  .greeting {
-    font-size: 14px; /* Adjust the greeting font size for mobile */
-  }
 }
-
-
