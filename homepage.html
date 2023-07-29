@@ -23,6 +23,7 @@
     <h1 class="title">Tutor Teman Sebaya-X9</h1>
     <p class="subtext">Dalam Pembangunan</p>
     <p id="clock" class="clock"></p> <!-- Digital Clock will be displayed here, below the subtext -->
+    <p id="greeting" class="greeting"></p> <!-- Greeting will be displayed here, below the clock -->
   </div>
 
   <script src="HomepageScript.js"></script>
@@ -64,8 +65,50 @@
       clockElement.textContent = timeString;
     }
 
-    // Update the clock every second
-    setInterval(updateClock, 1000);
+    // Function to update the greeting based on the time and day
+    function updateGreeting() {
+      var greetingElement = document.getElementById('greeting');
+      var now = new Date();
+      var hours = now.getHours();
+
+      // Function to get the day of the week as a string (0 = Sunday, 6 = Saturday)
+      function getDayOfWeekAsString(dayIndex) {
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        return days[dayIndex];
+      }
+
+      var dayOfWeek = now.getDay();
+      var greeting = '';
+
+      if (dayOfWeek === 0 || dayOfWeek === 6) {
+        // Weekend (Saturday or Sunday)
+        greeting = 'Me Time';
+      } else {
+        // Weekdays (Monday to Friday)
+        if (hours >= 7 && hours < 13) {
+          greeting = 'Jam Sekolah';
+        } else if (hours >= 13 && hours < 18) {
+          greeting = 'Selamat Sore';
+        } else if (hours >= 18 || hours < 7) {
+          greeting = 'Selamat Malam';
+        } else {
+          greeting = 'Selamat Pagi';
+        }
+      }
+
+      greetingElement.textContent = greeting;
+    }
+
+    // Call the functions to initialize the clock and greeting
+    updateClock();
+    updateGreeting();
+
+    // Update the clock and greeting every second
+    setInterval(function () {
+      updateClock();
+      updateGreeting();
+    }, 1000);
   </script>
 </body>
 </html>
+
