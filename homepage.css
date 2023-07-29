@@ -108,14 +108,14 @@ p {
   bottom: 20px; /* Distance from the bottom edge of the container */
   right: 20px; /* Distance from the right edge of the container */
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .clock {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: #444; /* Dark gray color */
+  margin-right: 10px; /* Add some spacing between the clock and greeting */
 }
 
 .greeting {
