@@ -5,7 +5,7 @@ function submitForm(event) {
   const message = document.getElementById('message');
 
   // Add your password validation logic here
-  const password = 'SAYABUKANROBOT'; // Replace with your actual passwor
+  const password = 'SAYABUKANROBOT'; // Replace with your actual password
 
   if (passwordInput.value === password) {
     // Password is correct
@@ -14,6 +14,7 @@ function submitForm(event) {
     message.style.display = 'block';
 
     setTimeout(() => {
+      adjustViewportForPasswordPage(); // Call the function to adjust viewport
       window.location.href = 'homepage.html'; // Redirect to homepage.html
     }, 2000); // Delay for 2 seconds before redirecting
   } else {
@@ -22,4 +23,14 @@ function submitForm(event) {
     message.style.color = 'red';
     message.style.display = 'block';
   }
+}
+
+function adjustViewportForPasswordPage() {
+  const passwordForm = document.getElementById('passwordForm');
+  const formHeight = passwordForm.offsetHeight;
+  const formWidth = passwordForm.offsetWidth;
+
+  // Set the viewport's width and height to match the form's size
+  document.documentElement.style.width = `${formWidth}px`;
+  document.documentElement.style.height = `${formHeight}px`;
 }
