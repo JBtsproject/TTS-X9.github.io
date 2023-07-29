@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 75vh; /* Adjust the margin-top value to move the content approximately 75% from the top */
 }
 
 h1 {
@@ -18,7 +19,6 @@ h1 {
   font-weight: 700;
   font-size: 36px;
   color: #444; /* Dark gray color */
-  margin-top: 20vh; /* Keep the title in its original spot */
 }
 
 p {
@@ -112,3 +112,15 @@ p {
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally with respect to the container */
 }
+
+/* Greeting Styles */
+.greeting {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #444; /* Dark gray color */
+  position: absolute;
+  bottom: 60px; /* Distance from the bottom edge of the container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally with respect to the container */
+}
+
