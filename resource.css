@@ -26,13 +26,14 @@ p {
   margin: 10px auto; /* Center paragraphs */
 }
 
+
 /* Menu Button Styles */
 .menu-button {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 40px; /* Adjust the button size for mobile */
-  height: 40px; /* Adjust the button size for mobile */
+  width: 60px; /* Adjust the width to match the homepage menu button size */
+  height: 40px; /* Adjust the height to match the homepage menu button size */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,8 +42,8 @@ p {
 }
 
 .menu-line {
-  width: 40px; /* Make it match the button's width */
-  height: 4px; /* Adjust the height of the lines */
+  width: 60px; /* Adjust the width to match the homepage menu button size */
+  height: 4px; /* Adjust the height to match the homepage menu button size */
   background-color: #444; /* Dark gray color */
 }
 
