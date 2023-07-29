@@ -11,7 +11,6 @@
       overflow: hidden;
       white-space: nowrap;
       animation: tickerAnimation 20s linear infinite;
-      margin: 20px 0;
       font-size: 18px;
       color: green; /* Set the color to green */
       max-width: 100%; /* Add max-width to prevent horizontal scroll */
@@ -146,31 +145,6 @@
       updateClock();
       updateGreeting();
     }, 1000);
-
-    // Disable scroll
-    function disableScroll() {
-      // Get the current scroll position
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-      // Block scrolling by setting the scroll position to the current position
-      window.onscroll = function() {
-        window.scrollTo(scrollLeft, scrollTop);
-      };
-    }
-
-    // Enable scroll
-    function enableScroll() {
-      window.onscroll = null;
-    }
-
-    // To disable scroll: call disableScroll();
-    // To enable scroll: call enableScroll();
-    
-    // Example: To disable scroll when the page loads
-    window.onload = function() {
-      disableScroll();
-    };
   </script>
 </body>
 </html>
