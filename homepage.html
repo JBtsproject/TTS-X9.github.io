@@ -14,6 +14,7 @@
       margin: 20px 0;
       font-size: 18px;
       color: white;
+      max-width: 100%; /* Add max-width to prevent horizontal scroll */
     }
 
     @keyframes tickerAnimation {
@@ -53,18 +54,44 @@
       <p id="clock" class="clock"></p>
       <p id="greeting" class="greeting"></p>
     </div>
+  </div>
 
-    <!-- News Ticker Section -->
-    <div class="news-ticker-container">
-      <div class="news-item">Breaking News: Example News Headline 1</div>
-      <div class="news-item">Important Update: Example News Headline 2</div>
-      <div class="news-item">Sports News: Example News Headline 3</div>
-      <!-- Add more news items as needed -->
-    </div>
+  <!-- News Ticker Section -->
+  <div class="news-ticker-container">
+    <div class="news-item">Breaking News: Example News Headline 1</div>
+    <div class="news-item">Important Update: Example News Headline 2</div>
+    <div class="news-item">Sports News: Example News Headline 3</div>
+    <!-- Add more news items as needed -->
   </div>
 
   <script src="HomepageScript.js"></script>
   <script>
+    function redirectToHomePage() {
+      window.location.href = 'homepage.html'; // Replace 'homepage.html' with the filename of your homepage
+    }
+
+    function redirectToJadwalTugasPage() {
+      window.location.href = 'jadwaltugas.html'; // Replace 'jadwaltugas.html' with the filename of your Jadwal Tugas page
+    }
+
+    function redirectToResourcePage() {
+      window.location.href = 'resource.html'; // Replace 'resource.html' with the filename of your Resource page
+    }
+
+    function toggleMenu() {
+      var dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.menu-button')) {
+        var dropdownMenu = document.getElementById('dropdownMenu');
+        if (dropdownMenu.style.display === 'block') {
+          dropdownMenu.style.display = 'none';
+        }
+      }
+    };
+
     // Function to update the digital clock
     function updateClock() {
       var clockElement = document.getElementById('clock');
@@ -122,5 +149,3 @@
   </script>
 </body>
 </html>
-
-
