@@ -18,12 +18,42 @@
     </div>
   </div>
 
+  <!-- Menu Button -->
+  <div class="menu-button" onclick="toggleMenu()">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div class="dropdown-menu" id="dropdownMenu">
+    <button class="dropdown-item">Example Button 1</button>
+    <button class="dropdown-item">Example Button 2</button>
+    <button class="dropdown-item">Example Button 3</button>
+  </div>
+
   <script src="HomepageScript.js"></script>
 
   <script>
     function redirectToTemporaryLink() {
       window.location.href = 'https://drive.google.com/drive/u/1/folders/1KAolDOGHRx__WSmkvDNF_tEHRjFdg133';
     }
+
+    // Function to toggle the dropdown menu
+    function toggleMenu() {
+      var dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Close the dropdown menu if clicked outside
+    window.onclick = function (event) {
+      if (!event.target.matches('.menu-button')) {
+        var dropdownMenu = document.getElementById('dropdownMenu');
+        if (dropdownMenu.style.display === 'block') {
+          dropdownMenu.style.display = 'none';
+        }
+      }
+    };
   </script>
 </body>
 </html>
