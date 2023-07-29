@@ -3,15 +3,21 @@ body {
   background-color: #f1f1f1;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Hide horizontal scroll if any */
 }
 
 .container {
-  position: relative;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px; /* Add some padding to the container */
+}
+
+.center {
+  max-width: 600px; /* Limit content width to prevent stretching on larger screens */
+  width: 100%; /* Ensure the content takes up full width */
 }
 
 .title {
