@@ -30,3 +30,16 @@ button {
   font-size: 14px;
 }
 
+/* Add media query for screens up to 600px (typical for mobile devices) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  input[type="password"],
+  button {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
