@@ -178,7 +178,9 @@ body {
   animation: tickerAnimation 20s linear infinite;
   font-size: 18px;
   color: green; /* Set the color to green */
+  text-align: center; /* Add text-align center to center the news ticker horizontally */
 }
+
 
 @keyframes tickerAnimation {
   0% {
