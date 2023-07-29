@@ -168,15 +168,16 @@ body {
   }
 }
 
-/* News Ticker Styles */
 .news-ticker-container {
+  position: absolute;
+  bottom: 20px; /* Adjust the value to position it at your desired distance from the bottom */
+  left: 0;
+  right: 0;
   overflow: hidden;
   white-space: nowrap;
   animation: tickerAnimation 20s linear infinite;
-  margin: 20px 0;
   font-size: 18px;
   color: green; /* Set the color to green */
-  max-width: 100%; /* Add max-width to prevent horizontal scroll */
 }
 
 @keyframes tickerAnimation {
