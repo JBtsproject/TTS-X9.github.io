@@ -24,22 +24,23 @@ button {
   background-color: #000; /* Light black color */
   color: white;
   border: none;
-  padding: 10px;
-  margin: 5px;
+  padding: 12px 20px; /* Increase padding to provide more touch area for mobile */
+  margin: 10px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 18px; /* Increase font size for better readability on mobile */
+  border-radius: 8px;
 }
 
-/* Add media query for screens up to 600px (typical for mobile devices) */
+/* Adjust layout for smaller screens */
 @media (max-width: 600px) {
   h1 {
-    font-size: 18px; /* Adjust font size for smaller screens */
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
 
   input[type="password"],
   button {
-    font-size: 12px; /* Adjust font size for smaller screens */
-    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 10px 15px; /* Adjust padding for smaller screens */
   }
 }
 
