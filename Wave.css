@@ -1,1 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.wave {
+  width: 300px;
+  height: 150px;
+  background-color: #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.wave:before, .wave:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.wave:before {
+  top: 50%;
+  left: -50%;
+  border-radius: 50% 40% 0 0;
+  transform: translate(0, -50%);
+}
+
+.wave:after {
+  bottom: 50%;
+  left: -50%;
+  border-radius: 0 0 50% 40%;
+  transform: translate(0, 50%);
+  animation: waveAnimation 2s linear infinite;
+}
+
+@keyframes waveAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+}
 
