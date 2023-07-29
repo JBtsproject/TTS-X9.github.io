@@ -17,6 +17,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   color: white;
+  margin-bottom: 20px; /* Add some margin to separate from the form */
 }
 
 input[type="password"],
@@ -24,23 +25,21 @@ button {
   background-color: #000; /* Light black color */
   color: white;
   border: none;
-  padding: 10px;
-  margin: 5px;
+  padding: 15px; /* Increase the padding for the input and button */
+  margin: 10px 5px; /* Add margin at top and bottom, and a smaller margin at sides */
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 18px; /* Increase the font size for better visibility */
 }
 
 /* Media Query for screens up to 600px (typical for mobile devices) */
 @media (max-width: 600px) {
   h1 {
-    font-size: 10vw; /* Increase the font size for the title on mobile */
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    font-size: 8vw; /* Adjust the font size for smaller screens */
   }
 
   input[type="password"],
   button {
-    width: 90%; /* Increase the width of the input textbox and button for better readability */
-    font-size: 6vw; /* Increase the font size for input textbox and button on mobile */
-    padding: 14px; /* Increase the padding for better readability */
+    padding: 10px; /* Adjust the padding for smaller screens */
+    font-size: 4vw; /* Adjust the font size for smaller screens */
   }
 }
