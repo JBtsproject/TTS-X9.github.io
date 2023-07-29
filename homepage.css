@@ -150,6 +150,7 @@ body {
 
   .menu-button {
     width: 30px; /* Adjust the button size for mobile */
+    height: 20px; /* Adjust the button height for mobile */
     right: 20px; /* Adjust the button position for mobile */
   }
 
@@ -157,4 +158,3 @@ body {
     width: 30px;
   }
 }
-
