@@ -131,7 +131,6 @@ body {
   color: #444; /* Dark gray color */
 }
 
-
 /* Media Query for screens up to 600px (typical for mobile devices) */
 @media (max-width: 600px) {
   .title {
@@ -159,5 +158,8 @@ body {
   .menu-line {
     width: 60px; /* Adjust the line width to match the button size */
     height: 4px; /* Adjust the line height to make it more visible */
+    z-index: 1; /* Set a lower z-index to display the lines behind the menu buttons */
   }
 }
+
+
