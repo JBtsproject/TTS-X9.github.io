@@ -11,31 +11,18 @@ body {
 .wave {
   width: 300px;
   height: 150px;
-  background-color: #007bff;
   position: relative;
   overflow: hidden;
 }
 
-.wave:before, .wave:after {
+.wave::before {
   content: "";
   position: absolute;
+  bottom: 0;
+  left: 0;
   width: 200%;
-  height: 100%;
-  background-color: inherit;
-}
-
-.wave:before {
-  top: 50%;
-  left: -50%;
-  border-radius: 50% 40% 0 0;
-  transform: translate(0, -50%);
-}
-
-.wave:after {
-  bottom: 50%;
-  left: -50%;
-  border-radius: 0 0 50% 40%;
-  transform: translate(0, 50%);
+  height: 2px;
+  background-color: #007bff;
   animation: waveAnimation 2s linear infinite;
 }
 
@@ -47,4 +34,5 @@ body {
     transform: translateX(-50%);
   }
 }
+
 
