@@ -131,6 +131,7 @@ body {
   color: #444; /* Dark gray color */
 }
 
+
 /* Media Query for screens up to 600px (typical for mobile devices) */
 @media (max-width: 600px) {
   .title {
@@ -148,13 +149,15 @@ body {
     margin: 10px; /* Add some margin to create space between buttons and edges */
   }
 
+  /* Updated styles for Menu Button for mobile */
   .menu-button {
-    width: 30px; /* Adjust the button size for mobile */
-    height: 20px; /* Adjust the button height for mobile */
-    right: 20px; /* Adjust the button position for mobile */
+    width: 60px; /* Increase the button width to make it bigger (2x) */
+    height: 40px; /* Increase the button height to make it bigger (2x) */
+    right: 10px; /* Adjust the button position for mobile */
   }
 
   .menu-line {
-    width: 30px;
+    width: 60px; /* Adjust the line width to match the button size */
+    height: 4px; /* Adjust the line height to make it more visible */
   }
 }
