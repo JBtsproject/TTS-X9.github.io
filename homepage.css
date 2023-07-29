@@ -149,12 +149,22 @@ body {
   }
 
   .menu-button {
-    width: 25px; /* Adjust the button size for mobile */
-    right: 50%; /* Center the button horizontally on mobile */
-    transform: translateX(50%); /* Adjust the button position for mobile */
+    position: absolute;
+    top: 20px;
+    right: 50%; /* Center the button horizontally */
+    transform: translateX(50%); /* Adjust the position after centering */
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2;
   }
 
   .menu-line {
-    width: 25px;
+    width: 30px;
+    height: 2px;
+    background-color: #444; /* Dark gray color */
   }
 }
