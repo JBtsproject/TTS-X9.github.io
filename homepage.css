@@ -1,35 +1,61 @@
+/* Original CSS for homepage.html */
 body {
   background-color: #f1f1f1;
   margin: 0;
   padding: 0;
 }
 
-.center {
+.container {
   position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 75vh; /* Adjust the margin-top value to move the content approximately 75% from the top */
 }
 
-h1 {
+.title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 72px;
   color: #444; /* Dark gray color */
+  text-align: center;
+  margin-top: 20vh; /* Adjust the value to position it higher */
+  margin-bottom: 0;
 }
 
-p {
+.subtext {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   color: #444;
   text-align: center;
-  max-width: 500px;
 }
 
-/* Menu Button Styles */
+/* New styles for buttons */
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  width: 300px;
+  height: 410px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color for text */
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle box shadow */
+}
+
+/* Original styles for Menu Button */
 .menu-button {
   position: absolute;
   top: 20px;
@@ -49,7 +75,7 @@ p {
   background-color: #444; /* Dark gray color */
 }
 
-/* Dropdown Menu Styles */
+/* Original styles for Dropdown Menu */
 .dropdown-menu {
   position: absolute;
   top: 60px;
@@ -78,31 +104,7 @@ p {
   background-color: #f1f1f1; /* Light gray background color on hover */
 }
 
-/* Custom Button Styles */
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.custom-button {
-  width: 200px; /* Increased width to make the buttons longer horizontally */
-  height: 100px; /* Adjusted height for a balanced shape */
-  background-color: #007bff; /* Blue color */
-  color: #fff; /* White color for text */
-  font-size: 24px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle box shadow */
-}
-
-/* Digital Clock and Greeting Styles */
+/* Updated styles for Digital Clock and Greeting */
 .clock-container {
   position: absolute;
   bottom: 20px; /* Distance from the bottom edge of the container */
@@ -117,6 +119,13 @@ p {
   color: #444; /* Dark gray color */
   margin-right: 10px; /* Add some spacing between the clock and greeting */
 }
+
+.greeting {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #444; /* Dark gray color */
+}
+
 
 .greeting {
   font-family: 'Montserrat', sans-serif;
