@@ -162,4 +162,29 @@ body {
   }
 }
 
+/* News Ticker Styles */
+.news-ticker-container {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: tickerAnimation 20s linear infinite;
+  margin: 20px 0;
+  font-size: 18px;
+  color: green; /* Set the color to green */
+  max-width: 100%; /* Add max-width to prevent horizontal scroll */
+}
+
+@keyframes tickerAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.news-item {
+  display: inline-block;
+  padding: 0 20px;
+}
+
 
