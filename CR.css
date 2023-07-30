@@ -1,75 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Resource Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="resource.css">
-</head>
-<body>
-  <!-- Menu Button -->
-  <div class="menu-button" onclick="toggleMenu()">
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-  </div>
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Dropdown Menu -->
-  <div class="dropdown-menu" id="dropdownMenu">
-    <button class="dropdown-item" onclick="redirectToHomePage()">Homepage</button>
-    <button class="dropdown-item" onclick="redirectToJadwalTugasPage()">Jadwal Tugas</button>
-    <button class="dropdown-item" onclick="redirectToResourcePage()">Resource Pembelajaran</button>
-  </div>
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-  <div class="center">
-    <h1>Resource Page</h1>
-    <p>Welcome to the Resource page! Here, you can find various resources related to our website's topic.</p>
+.container {
+  display: flex;
+}
 
-    <!-- Buttons from homepage.html -->
-    <div class="buttons-container">
-      <button class="custom-button">Pembahasan Materi</button>
-      <button class="custom-button">Latihan Soal</button>
-      <button class="custom-button" onclick="redirectToCRPage();">R</button>
-      <button class="custom-button">Informasi^2</button>
-      <button class="custom-button" onclick="redirectToTemporaryLink();">Temporary Storage</button>
-    </div>
-    <!-- End of Buttons from homepage.html -->
-  </div>
+.course-list {
+  flex: 1;
+  padding: 20px;
+}
 
-  <script src="HomepageScript.js"></script>
-  <script>
-    function redirectToHomePage() {
-      window.location.href = 'homepage.html'; // Replace 'homepage.html' with the filename of your homepage
-    }
+.course-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
 
-    function redirectToJadwalTugasPage() {
-      window.location.href = 'jadwaltugas.html'; // Replace 'jadwaltugas.html' with the filename of your Jadwal Tugas page
-    }
+.course-card:hover {
+  background-color: #f1f1f1;
+}
 
-    function redirectToResourcePage() {
-      window.location.href = 'resource.html'; // Replace 'resource.html' with the filename of your Resource page
-    }
+.course-details {
+  flex: 2;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
 
-    function redirectToTemporaryLink() {
-      window.location.href = 'https://drive.google.com/drive/u/1/folders/1KAolDOGHRx__WSmkvDNF_tEHRjFdg133';
-    }
+#createCourseButton {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-    function redirectToCRPage() {
-      window.location.href = 'CR.html'; // Redirect to the CR.html page
-    }
+#createCourseButton:hover {
+  background-color: #218838;
+}
 
-    function toggleMenu() {
-      var dropdownMenu = document.getElementById('dropdownMenu');
-      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.menu-button')) {
-        var dropdownMenu = document.getElementById('dropdownMenu');
-        if (dropdownMenu.style.display === 'block') {
-          dropdownMenu.style.display = 'none';
-        }
-      }
-    };
-  </script>
-</body>
-</html>
