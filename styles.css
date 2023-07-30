@@ -3,8 +3,6 @@ body {
   background-color: #111; /* Light black color */
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #111, #4f4f4f); /* Initial gradient */
-  animation: rotateGradient 20s linear infinite; /* Animation for rotation */
 }
 
 .center {
@@ -46,13 +44,3 @@ button {
     font-size: 4vw; /* Adjust the font size for smaller screens */
   }
 }
-
-@keyframes rotateGradient {
-  from {
-    background-position: 0 0; /* Starting position of the gradient */
-  }
-  to {
-    background-position: 100% 100%; /* Ending position of the gradient */
-  }
-}
-
