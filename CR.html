@@ -1,56 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chat Room</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="resource.css">
+  <title>My Classroom</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <!-- Menu Button -->
-  <div class="menu-button" onclick="toggleMenu()">
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
-    <div class="menu-line"></div>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Classroom</h1>
+    <button id="createCourseButton">Create Course</button>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Course List -->
+    <div class="course-list">
+      <!-- Course Cards will be dynamically generated using JavaScript -->
+    </div>
+
+    <!-- Course Details -->
+    <div class="course-details">
+      <!-- Course details will be dynamically updated using JavaScript -->
+    </div>
   </div>
 
-  <!-- Dropdown Menu -->
-  <div class="dropdown-menu" id="dropdownMenu">
-    <button class="dropdown-item" onclick="redirectToHomePage()">Homepage</button>
-    <button class="dropdown-item" onclick="redirectToJadwalTugasPage()">Jadwal Tugas</button>
-    <button class="dropdown-item" onclick="redirectToResourcePage()">Resource Pembelajaran</button>
-  </div>
-
-  <div class="center">
-    <h1>Chat Room</h1>
-  </div>
-
-  <script>
-    function redirectToHomePage() {
-      window.location.href = 'homepage.html'; // Replace 'homepage.html' with the filename of your homepage
-    }
-
-    function redirectToJadwalTugasPage() {
-      window.location.href = 'jadwaltugas.html'; // Replace 'jadwaltugas.html' with the filename of your Jadwal Tugas page
-    }
-
-    function redirectToResourcePage() {
-      window.location.href = 'resource.html'; // Replace 'resource.html' with the filename of your Resource page
-    }
-
-    function toggleMenu() {
-      var dropdownMenu = document.getElementById('dropdownMenu');
-      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.menu-button')) {
-        var dropdownMenu = document.getElementById('dropdownMenu');
-        if (dropdownMenu.style.display === 'block') {
-          dropdownMenu.style.display = 'none';
-        }
-      }
-    };
-  </script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
-
