@@ -27,17 +27,6 @@ function displayCourseDetails(course) {
   `;
 }
 
-// Event listener for the Create Course button
-const createCourseButton = document.getElementById('createCourseButton');
-createCourseButton.addEventListener('click', () => {
-  const newCourse = {
-    id: courses.length + 1,
-    name: 'New Course',
-    description: 'This is a new course'
-  };
-  courses.push(newCourse);
-  displayCourses();
-});
-
 // Initial function call to display courses
 displayCourses();
+
