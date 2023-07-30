@@ -22,7 +22,7 @@ header {
   right: 20px;
   width: 60px; /* Adjust the width to match the homepage menu button size */
   height: 40px; /* Adjust the height to match the homepage menu button size */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -97,5 +97,18 @@ header {
 
 #createCourseButton:hover {
   background-color: #218838;
+}
+
+/* Media query for smaller screen sizes (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  /* Show the menu button on mobile devices */
+  .menu-button {
+    display: block;
+  }
+
+  /* Hide the dropdown menu by default on mobile devices */
+  .dropdown-menu {
+    display: none;
+  }
 }
 
