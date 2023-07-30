@@ -1,44 +1,43 @@
-// List of subjects
-const subjects = [
-  "Matematika",
-  "Fisika",
-  "Kimia",
-  "Biologi",
-  "Informatika",
-  "Bahasa Inggris",
-  "Bahasa Indonesia",
-  "Geografi",
-  "PPKN",
-  "Pjok",
-  "Sejarah",
-  "Ekonomi",
-  "Sosiologi",
-  "Seni Rupa",
-  "Agama"
+// Sample data for courses (replace this with your actual data)
+const courses = [
+  { id: 1, name: 'Mathematics', description: 'Learn about numbers and equations' },
+  { id: 2, name: 'Science', description: 'Explore the natural world' },
+  { id: 3, name: 'History', description: 'Discover the past' }
 ];
 
-// Function to display the list of subjects
-function displaySubjects() {
-  const subjectList = document.querySelector('.subject-list');
+// Function to display the list of courses
+function displayCourses() {
+  const courseList = document.querySelector('.course-list');
 
-  subjects.forEach(subject => {
-    const subjectButton = document.createElement('button');
-    subjectButton.classList.add('subject-button');
-    subjectButton.textContent = subject;
-    subjectButton.addEventListener('click', () => displaySubjectDetails(subject));
-    subjectList.appendChild(subjectButton);
+  courses.forEach(course => {
+    const courseCard = document.createElement('div');
+    courseCard.classList.add('course-card');
+    courseCard.textContent = course.name;
+    courseCard.addEventListener('click', () => displayCourseDetails(course));
+    courseList.appendChild(courseCard);
   });
 }
 
-// Function to display subject details
-function displaySubjectDetails(subject) {
-  const subjectDetails = document.querySelector('.subject-details');
-  subjectDetails.innerHTML = `
-    <h2>${subject}</h2>
-    <p>Details for ${subject} will be displayed here.</p>
+// Function to display course details
+function displayCourseDetails(course) {
+  const courseDetails = document.querySelector('.course-details');
+  courseDetails.innerHTML = `
+    <h2>${course.name}</h2>
+    <p>${course.description}</p>
   `;
 }
 
-// Initial function call to display subjects
-displaySubjects();
+// Event listener for the Create Course button
+const createCourseButton = document.getElementById('createCourseButton');
+createCourseButton.addEventListener('click', () => {
+  const newCourse = {
+    id: courses.length + 1,
+    name: 'New Course',
+    description: 'This is a new course'
+  };
+  courses.push(newCourse);
+  displayCourses();
+});
 
+// Initial function call to display courses
+displayCourses();
