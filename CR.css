@@ -15,38 +15,27 @@ header {
   display: flex;
 }
 
-.course-list {
+.subject-list {
   flex: 1;
   padding: 20px;
 }
 
-.course-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.course-card:hover {
-  background-color: #f1f1f1;
-}
-
-.course-details {
-  flex: 2;
-  padding: 20px;
-  border-left: 1px solid #ddd;
-}
-
-#createCourseButton {
-  background-color: #28a745;
+.subject-button {
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  margin: 5px;
 }
 
-#createCourseButton:hover {
-  background-color: #218838;
+.subject-button:hover {
+  background-color: #0056b3;
 }
 
+.subject-details {
+  flex: 2;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
