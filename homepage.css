@@ -1,8 +1,8 @@
 /* Original CSS for homepage.html */
 body {
   font-family: 'Montserrat', sans-serif; 
-  bbackground: linear-gradient(to right, #F0F0F0, #FFFFFF);
-  background-size: 200% 200%;
+  bbackground: linear-gradient(to right, #808080, #FFFFFF);
+  background-size: 200% 100%;
   animation: animateBackground 10s infinite;
   margin: 0;
   padding: 0;
@@ -11,10 +11,10 @@ body {
 
 @keyframes animateBackground {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
     100% {
-        background-position: 100% 50%;
+        background-position: 100% 0%;
     }
 }
 
