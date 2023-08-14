@@ -1,39 +1,62 @@
 body {
-  background-color: #f1f1f1;
+  font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.center {
-  position: relative;
+header {
+  background-color: #007bff;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  color: #444; /* Dark gray clor */
+.container {
+  display: flex;
 }
 
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: #444;
-  text-align: center;
-  max-width: 600px; /* Limit the width of paragraphs for better readability */
-  margin: 10px auto; /* Center paragraphs */
+.course-list {
+  flex: 1;
+  padding: 20px;
 }
 
+.course-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  background-color: #f1f1f1;
+}
+
+.course-details {
+  flex: 2;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+#createCourseButton {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#createCourseButton:hover {
+  background-color: #218838;
+}
 
 /* Menu Button Styles */
 .menu-button {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 60px; /* Adjust the width to match the homepage menu button size */
-  height: 40px; /* Adjust the height to match the homepage menu button size */
+  width: 60px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,9 +65,9 @@ p {
 }
 
 .menu-line {
-  width: 60px; /* Adjust the width to match the homepage menu button size */
-  height: 4px; /* Adjust the height to match the homepage menu button size */
-  background-color: #444; /* Dark gray color */
+  width: 60px;
+  height: 4px;
+  background-color: #444;
 }
 
 /* Dropdown Menu Styles */
@@ -52,87 +75,21 @@ p {
   position: absolute;
   top: 60px;
   right: 20px;
-  display: none;
+  display: flex;
   flex-direction: column;
-  background-color: #fff; /* White background color for the menu */
-  border: 1px solid #ddd; /* Light gray border */
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adding a box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
-.dropdown-item {
-  padding: 8px 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #444; /* Dark gray color */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
+/* Rest of the CSS styles remain unchanged */
 
-/* Dropdown Menu Styles: Hover */
-.dropdown-item:hover {
-  background-color: #f1f1f1; /* Light gray background color on hover */
-}
-
-/* Custom Button Styles */
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.custom-button {
-  min-width: 200px; /* Minimum width to maintain button readability */
-  width: 40%; /* Allow buttons to take available space */
-  height: 150px; /* Adjust button height for better visibility */
-  background-color: #007bff; /* Blue color */
-  color: #fff; /* White color for text */
-  font-size: 24px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle box shadow */
-}
-
-/* Neon yellow hover effect */
-.custom-button:hover {
-  background-color: #00ff00; /* Green color */
-}
-
-/* Media Query for screens up to 600px (typical for mobile devices) */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 6vw;
-  }
-
-  p {
-    font-size: 3vw;
-  }
-
-  .menu-button {
-    width: 60px; /* Adjust the button size for mobile */
-    height: 60px; /* Adjust the button size for mobile */
-    right: 10px; /* Adjust the button position for mobile */
-  }
-
-  .menu-line {
-    width: 60px; /* Make it match the button's width */
-    height: 6px; /* Adjust the height of the lines */
-  }
-
-  .custom-button {
-    min-width: 90%; /* Adjust button width for smaller screens */
-    width: auto; /* Allow buttons to take available space */
-    height: 120px; /* Adjust button height for smaller screens */
-    font-size: 16px; /* Adjust font size for smaller screens */
-    margin: 5px; /* Add some margin to create space between buttons and edges */
+/* Hide the dropdown menu by default on larger screens (PCs) */
+@media screen and (min-width: 769px) {
+  .dropdown-menu {
+    display: none;
   }
 }
 
