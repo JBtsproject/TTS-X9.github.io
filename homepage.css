@@ -1,13 +1,23 @@
 /* Original CSS for homepage.html */
 body {
   font-family: 'Montserrat', sans-serif; 
-  background-color: #f1f1f1;
+  background: linear-gradient(45deg, #FFC107, #E91E63, #2196F3);
+  background-size: 200% 200%;
+  animation: animateBackground 10s infinite;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scroll if any */
 }
 
-  
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
   
 
 .container {
@@ -200,4 +210,13 @@ body {
   padding: 0 20px;
 }
 
+.element-to-be-on-top {
+    position: relative;
+    z-index: 10;
+}
+
+.element-behind {
+    position: relative;
+    z-index: 5;
+}
 
