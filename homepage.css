@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif; 
   background: linear-gradient(90deg, #808080, #FFFFFF);
   background-size: 200% 100%;
-  animation: animateBackground 10s infinite;
+  animation: animateBackground 20s linear infinite;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scroll if any */
